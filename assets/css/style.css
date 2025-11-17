@@ -1,0 +1,419 @@
+/* --------------------------------------------------
+   ROOT COLOR & VARIABLES
+-------------------------------------------------- */
+:root {
+  --si-primary: #003c78;
+  --si-primary-soft: #0059a3;
+  --si-accent: #ffb100;
+  --si-dark: #0f172a;
+  --si-light: #f5f7fb;
+  --si-radius-lg: 1.2rem;
+}
+
+/* --------------------------------------------------
+   GLOBAL STYLES
+-------------------------------------------------- */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #1f2933;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-soft {
+  background: var(--si-light);
+}
+
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
+.navbar {
+  background: rgba(15, 23, 42, 0.9) !important;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #e5e7eb !important;
+  transition: 0.2s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--si-accent) !important;
+}
+.navbar-logo {
+  width: 60px;
+  height: auto;
+}
+
+/* --------------------------------------------------
+   HERO (BERANDA)
+-------------------------------------------------- */
+#beranda {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: linear-gradient(
+      120deg,
+      rgba(0, 60, 120, 0.96),
+      rgba(0, 92, 170, 0.94)
+    ),
+    url("https://i.pinimg.com/736x/65/cb/51/65cb51545351b8fe2539cc144d775a89.jpg")
+      center/cover fixed;
+  padding-top: 120px;
+}
+
+#beranda .badge-hero {
+  background: rgba(15, 23, 42, 0.85);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+#beranda h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+}
+
+.hero-stat {
+  background: rgba(15, 23, 42, 0.7);
+  padding: 1rem 1.4rem;
+  border-radius: var(--si-radius-lg);
+  margin-bottom: 1rem;
+}
+
+.hero-stat h4 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+   GENERIC SECTION STYLES
+-------------------------------------------------- */
+section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.section-heading {
+  font-weight: 700;
+  color: var(--si-dark);
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  width: 64px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--si-primary), var(--si-accent));
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+/* --------------------------------------------------
+   PROFIL PAGE ELEMENTS
+-------------------------------------------------- */
+.profil-card {
+  border-radius: var(--si-radius-lg);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.profil-badge {
+  background: rgba(59, 130, 246, 0.07);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #1d4ed8;
+}
+
+.profil-tabs .nav-link {
+  border-radius: 999px !important;
+  font-size: 0.9rem;
+  padding-inline: 1rem;
+  color: #4b5563;
+}
+
+.profil-tabs .nav-link.active {
+  background: var(--si-primary);
+  color: #ffffff;
+}
+
+/* --------------------------------------------------
+   PROFIL TABS STYLE (garis bawah seperti contoh)
+-------------------------------------------------- */
+.profil-tabs-line {
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.profil-tabs-line .nav-link {
+  border: none;
+  border-radius: 0;
+  margin-right: 1.5rem;
+  padding: 0.75rem 0;
+  font-weight: 600;
+  color: #6b7280;
+  position: relative;
+  background: transparent;
+}
+
+.profil-tabs-line .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 3px;
+  background-color: var(--si-primary);
+  border-radius: 999px;
+  transition: width 0.2s ease-in-out;
+}
+
+.profil-tabs-line .nav-link:hover {
+  color: var(--si-primary);
+}
+
+.profil-tabs-line .nav-link.active {
+  color: var(--si-primary);
+}
+
+.profil-tabs-line .nav-link.active::after {
+  width: 100%;
+}
+
+/* judul di dalam tab */
+.profil-section-heading {
+  font-weight: 700;
+  color: var(--si-primary);
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+/* --------------------------------------------------
+   KURIKULUM
+-------------------------------------------------- */
+.accordion-button {
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(0, 60, 120, 0.08);
+  color: var(--si-primary);
+}
+
+.table-kurikulum th {
+  background: #f3f4f6;
+  font-size: 0.85rem;
+}
+
+.badge-sks {
+  background: rgba(0, 60, 120, 0.06);
+  color: var(--si-primary-soft);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+}
+/* --------------------------------------------------
+   FOKUS KEAHLIAN
+-------------------------------------------------- */
+.keahlian-card {
+  border-radius: 1.25rem;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  padding: 1.5rem 1.6rem;
+  height: 100%;
+}
+
+.keahlian-icon {
+  flex-shrink: 0;
+}
+
+.keahlian-icon svg {
+  width: 46px;
+  height: 46px;
+}
+
+.keahlian-text h5 {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.keahlian-text p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 0;
+}
+.dosen-foto {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%; /* menjaga lingkaran */
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* --------------------------------------------------
+   KEMAHSISWAAN
+-------------------------------------------------- */
+.prestasi-card {
+  border-radius: var(--si-radius-lg);
+  border: 1px solid #e5e7eb;
+  transition: 0.2s ease;
+}
+
+.prestasi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+}
+
+.gallery-grid img {
+  border-radius: 1rem;
+  object-fit: cover;
+  height: 210px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.4);
+}
+
+/* --------------------------------------------------
+   FASILITAS (card rapi gambar atas, teks bawah)
+-------------------------------------------------- */
+.facility-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.facility-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* tinggi konsisten, nggak kelewat panjang */
+  object-fit: cover;
+  display: block;
+}
+
+.facility-card-content {
+  padding: 1.4rem 1.5rem 1.7rem;
+  text-align: center;
+}
+
+.facility-card-content h5 {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.facility-card-content p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------
+   KONTAK PAGE
+-------------------------------------------------- */
+.contact-card {
+  border-radius: var(--si-radius-lg);
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--si-primary);
+}
+
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  background: rgba(55, 65, 81, 0.06);
+  text-decoration: none;
+  color: #111827;
+}
+
+.social-pill:hover {
+  background: var(--si-primary);
+  color: #ffffff;
+}
+
+/* --------------------------------------------------
+   FORM
+-------------------------------------------------- */
+.form-control,
+.form-select {
+  border-radius: 0.8rem;
+  padding: 0.7rem 0.9rem;
+  border-color: #e5e7eb;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--si-primary);
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+  background: #020617;
+  color: #9ca3af;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------
+   UTILITY
+-------------------------------------------------- */
+.shadow-soft {
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 991.98px) {
+  #beranda {
+    text-align: center;
+  }
+
+  .hero-stat {
+    margin-top: 1rem;
+  }
+}

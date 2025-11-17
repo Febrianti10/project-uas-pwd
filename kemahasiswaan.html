@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Studi Sistem Informasi - Kemahasiswaan</title>
+
+    <!-- Bootstrap (lokal) -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Style custom -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap Icons (opsional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/img/Lambang_Universitas_Tanjungpura.png"
+            alt="Logo Prodi SI"
+            class="navbar-logo"
+          />
+          <div class="ms-2 navbar-brand-text">
+            <div class="brand-line-1">Prodi Sistem Informasi</div>
+            <div class="brand-line-2">FMIPA UNTAN</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kurikulum.html">Kurikulum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kemahasiswaan.html"
+                >Kemahasiswaan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SPACER -->
+    <div style="height: 80px"></div>
+
+    <!-- HEADER -->
+    <section class="bg-soft py-4">
+      <div class="container">
+        <p class="section-title mb-1">Kemahasiswaan</p>
+        <h2 class="section-heading mb-2">Prestasi & Aktivitas Mahasiswa</h2>
+        <div class="section-divider mb-3"></div>
+        <p>
+          Berbagai pencapaian mahasiswa serta dokumentasi kegiatan yang
+          dilakukan oleh Himpunan Mahasiswa Sistem Informasi maupun aktivitas
+          akademik.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container">
+        <div class="row g-4">
+          <!-- PRESTASI -->
+          <div class="col-lg-6">
+            <div class="prestasi-card p-4 bg-white h-100">
+              <h5 class="fw-semibold mb-3">Prestasi Mahasiswa</h5>
+
+              <div class="mb-3">
+                <h6 class="mb-1">Juara 1 Lomba Aplikasi Mobile Nasional</h6>
+                <p class="small text-muted mb-1">GEMASTIK — 2024</p>
+                <p class="small mb-0">
+                  Tim mahasiswa Sistem Informasi berhasil membuat aplikasi
+                  manajemen pelayanan publik dan memenangkan penghargaan inovasi
+                  aplikasi terbaik tingkat Nasional.
+                </p>
+              </div>
+
+              <div class="border-top my-3"></div>
+
+              <div class="mb-3">
+                <h6 class="mb-1">Finalis Business Plan Teknologi</h6>
+                <p class="small text-muted mb-1">
+                  Techno Business Competition — 2023
+                </p>
+                <p class="small mb-0">
+                  Mahasiswa mengembangkan ide startup digital untuk membantu
+                  UMKM masuk ke ekosistem pemasaran online berbasis data
+                  analytics.
+                </p>
+              </div>
+
+              <div class="border-top my-3"></div>
+
+              <div>
+                <h6 class="mb-1">Best Paper Konferensi Sistem Informasi</h6>
+                <p class="small text-muted mb-1">
+                  Konferensi Nasional SI — 2022
+                </p>
+                <p class="small mb-0">
+                  Riset tentang penerapan machine learning untuk prediksi
+                  tingkat kelulusan mahasiswa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- GALERI -->
+          <div class="col-lg-6">
+            <h5 class="fw-semibold mb-3">Galeri Kegiatan</h5>
+
+            <div class="row g-3 gallery-grid">
+              <div class="col-6">
+                <img
+                  src="assets/img/1.JPG"
+                  class="w-100"
+                  alt="Kegiatan 1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#galleryModal"
+                  data-img="assets/img/1.JPG"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="assets/img/2.JPG"
+                  class="w-100"
+                  alt="Kegiatan 2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#galleryModal"
+                  data-img="assets/img/2.JPG"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="assets/img/5.JPG"
+                  class="w-100"
+                  alt="Kegiatan 3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#galleryModal"
+                  data-img="assets/img/5.JPG"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="assets/img/4.JPG"
+                  class="w-100"
+                  alt="Kegiatan 4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#galleryModal"
+                  data-img="assets/img/4.JPG"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL GALERI -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark border-0">
+          <div class="modal-body p-0">
+            <img
+              id="galleryModalImg"
+              src=""
+              alt="Foto Kegiatan"
+              class="w-100"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-light position-absolute top-0 end-0 m-2 rounded-pill px-3 py-1"
+            data-bs-dismiss="modal"
+          >
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+      >
+        <span
+          >&copy; <span id="year"></span> Copyright © 2025 Program Studi Sistem
+          Informasi | Powered by Program Studi Sistem Informasi .</span
+        >
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Custom -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Studi Sistem Informasi - Profil</title>
+
+    <!-- Bootstrap (lokal) -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Style custom -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap Icons (opsional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/img/Lambang_Universitas_Tanjungpura.png"
+            alt="Logo Prodi SI"
+            class="navbar-logo"
+          />
+          <div class="ms-2 navbar-brand-text">
+            <div class="brand-line-1">Prodi Sistem Informasi</div>
+            <div class="brand-line-2">FMIPA UNTAN</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kurikulum.html">Kurikulum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kemahasiswaan.html">Kemahasiswaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SPACER -->
+    <div style="height: 80px"></div>
+
+    <!-- HEADER / SEKILAS -->
+    <section class="bg-soft py-4">
+      <div class="container">
+        <p class="section-title mb-1">Profil</p>
+        <h2 class="section-heading mb-2">Program Studi Sistem Informasi</h2>
+        <div class="section-divider mb-3"></div>
+        <p class="mb-0">
+          Program Studi Sistem Informasi berfokus pada pengembangan keilmuan dan
+          keahlian di bidang analisis, perancangan, serta pengelolaan sistem
+          informasi yang mendukung proses bisnis organisasi. Lulusan diharapkan
+          mampu menjembatani kebutuhan bisnis dan solusi teknologi informasi
+          secara profesional.
+        </p>
+      </div>
+    </section>
+
+    <!-- TAB PROFIL -->
+    <section>
+      <div class="container">
+        <!-- NAV TABS (seperti contoh screenshot) -->
+        <ul class="nav profil-tabs-line" id="profilTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="tab-sejarah"
+              data-bs-toggle="tab"
+              data-bs-target="#sejarah"
+              type="button"
+            >
+              Sejarah
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-visi"
+              data-bs-toggle="tab"
+              data-bs-target="#visi-misi"
+              type="button"
+            >
+              Visi &amp; Misi
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-struktur"
+              data-bs-toggle="tab"
+              data-bs-target="#struktur"
+              type="button"
+            >
+              Struktur Organisasi
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-akreditasi"
+              data-bs-toggle="tab"
+              data-bs-target="#akreditasi"
+              type="button"
+            >
+              Akreditasi
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-dosen"
+              data-bs-toggle="tab"
+              data-bs-target="#dosen"
+              type="button"
+            >
+              Dosen
+            </button>
+          </li>
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content py-3" id="profilTabContent">
+          <!-- Sejarah -->
+          <div class="tab-pane fade show active" id="sejarah" role="tabpanel">
+            <h3 class="profil-section-heading">Sejarah</h3>
+            <p>
+              Program Studi Sistem informasi berdiri sejak terbitnya Keputusan
+              Menteri Nomor: 442/E.E2/DT/2014 tanggal 19 Mei 2014. Program Studi
+              Sistem informasi menerapkan Kurikulum Berbasis Kompetensi (KBK)
+              saat awal pendirian dan menerima mahasiswa baru pada semester
+              gasal tahun akademik 2014/2015. Mahasiswa pada angkatan pertama
+              berjumlah 30 orang dengan satu jalur seleksi SBMPTN saja, karena
+              waktu pendirian yang telah melewati jalur seleksi SNMPTN dan belum
+              siap untuk menerima jalur seleksi mandiri. Di tahun ke dua,
+              Program Studi Sistem informasi mulai menerima mahasiswa baru
+              dengan tiga jalur seleksi yaitu SNMPTN, SBMPTN, dan Mandiri.
+            </p>
+            <p>
+              Sejarah Program Studi Sistem Informasi Dosen Sisfo Program Studi
+              Sistem informasi berdiri sejak terbitnya Keputusan Menteri Nomor:
+              442/E.E2/DT/2014 tanggal 19 Mei 2014. Program Studi Sistem
+              informasi menerapkan Kurikulum Berbasis Kompetensi (KBK) saat awal
+              pendirian dan menerima mahasiswa baru pada semester gasal tahun
+              akademik 2014/2015. Mahasiswa pada angkatan pertama berjumlah 30
+              orang dengan satu jalur seleksi SBMPTN saja, karena waktu
+              pendirian yang telah melewati jalur seleksi SNMPTN dan belum siap
+              untuk menerima jalur seleksi mandiri. Di tahun ke dua, Program
+              Studi Sistem informasi mulai menerima mahasiswa baru dengan tiga
+              jalur seleksi yaitu SNMPTN, SBMPTN, dan Mandiri. Saat ini Program
+              Studi Sistem informasi menerapkan Kurikulum Pendidikan Tinggi
+              (KPT) yang mengacu pada Kerangka Kualifikasi Nasional Indonesia
+              (KKNI). Muatan kurikulum ini terdiri dari kurikulum teori 101 sks
+              (70%) dan kurikulum praktek 43 sks (30%) yang total berjumlah 144
+              SKS. Kurikulum praktek dan kurikulum teori ditetapkan berdasarkan
+              masukan pakar, sejawat dan kalangan industri dengan penekanan pada
+              kompetensinya. Program Studi Sistem informasi mengajarkan landasan
+              ilmu pengetahuan dan penerapan teknologi informasi dalam suatu
+              organisasi. Terkait hal tersebut kurikulum Program Studi Sistem
+              informasi bersifat khas karena dibangun diatas 3 (tiga) bidang
+              yaitu: Ilmu Komputer, Manajemen dan Bisnis. Selama perkuliahan
+              mahasiswa akan dibekali dengan berbagai kompetensi di ketiga
+              bidang tersebut agar mampu memberikan solusi terkait sistem
+              informasi yang sesuai dengan kebutuhan organisasi. Sejak tanggal 9
+              Juli 2018, berdasarkan keputusan Badan Akreditasi Nasional
+              Perguruan Tinggi (BAN-PT) No. 1727/SK/BAN-PT/Akred/S/VII/2018
+              menyatakan bahwa PS Sisfo, Pada Program Sarjana Universitas
+              Tanjungpura telah Terakreditasi dengan peringkat “Terakreditasi B”
+              yang berlaku selama 5 tahun terhitung sejak tanggal 9 Juli 2018 –
+              9 Juli 2023.
+            </p>
+          </div>
+
+          <!-- Visi & Misi -->
+          <div class="tab-pane fade" id="visi-misi" role="tabpanel">
+            <h3 class="profil-section-heading">Visi &amp; Misi</h3>
+
+            <h5 class="fw-semibold mb-2">Visi</h5>
+            <p>
+              “Program Studi yang inovatif dan adaptif dalam mengembangkan
+              keilmuan dan mengelola sistem informasi guna mendukung
+              transformasi digitalisasi potensi kekayaan lokal.”
+            </p>
+
+            <h5 class="fw-semibold mb-2 mt-4">Misi</h5>
+            <ul>
+              <li>
+                Mengembangkan dan mengimplementasikan program pendidikan di
+                bidang sistem informasi yang inovatif dengan menyesuaikan
+                perkembangan zaman.
+              </li>
+              <li>
+                Melaksanakan penelitian dalam bidang sistem informasi yang
+                berfokus pada lingkungan tropis dan mampu berkompetisi sacara
+                nasional dan internasional.
+              </li>
+              <li>
+                Melaksanakan pengabdian kepada masyarakat melalui penerapan
+                solusi sistem informasi.
+              </li>
+              <li>
+                Menjalin kerjasama dengan dunia industri dan lembaga terkait
+                untuk peningkatan kompetensi lulusan.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Struktur Organisasi -->
+          <div class="tab-pane fade" id="struktur" role="tabpanel">
+            <h3 class="profil-section-heading">
+              Struktur Organisasi Jurusan Sistem Informasi Fakultas MIPA -
+              Universitas Tanjungpura Periode 2022-2026
+            </h3>
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-5">
+                <div class="p-3 rounded-3 bg-soft">
+                  <p class="mb-1 fw-semibold">Ketua Jurusan Sistem Informasi</p>
+                  <p class="mb-0 small text-muted">
+                    Renny Puspita Sari, S.T., M.T.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 rounded-3 bg-soft">
+                  <p class="mb-1 fw-semibold">
+                    Sekretaris Jurusan Sistem Informasi
+                  </p>
+                  <p class="mb-0 small text-muted">Ibnur Rusi, S.Kom., M.M.</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 rounded-3 bg-soft">
+                  <p class="mb-1 fw-semibold">Admin Jurusan Sistem Informasi</p>
+                  <p class="mb-0 small text-muted">Agus Setiawan, S.Si</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 rounded-3 bg-soft">
+                  <p class="mb-1 fw-semibold">
+                    Kepala Laboratorium Komputer Jurusan Sistem Informasi
+                  </p>
+                  <p class="mb-0 small text-muted">
+                    Ferdy Febriyanto, S.Kom., M.Kom.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="p-3 rounded-3 bg-soft">
+                  <p class="mb-1 fw-semibold">
+                    Laboran Jurusan Sistem Informasi
+                  </p>
+                  <p class="mb-0 small text-muted">Solihin, S.Kom.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Akreditasi -->
+          <div class="tab-pane fade" id="akreditasi" role="tabpanel">
+            <h3 class="profil-section-heading">Akreditasi</h3>
+            <p>
+              Program studi Sistem Informasi mendapatkan predikat akreditas
+              (BAIK SEKALI) oleh Lembaga Akreditasi Mandiri Informatika dan
+              Komputer No. SK : 077/SK/LAM-INFOKOM/Ak/S/VIII/2023″
+            </p>
+            <ul class="small mb-0">
+              <li>LAM INFOKOM No. 077/SK/LAM-INFOKOM/Ak/S/VIII/2023</li>
+              <li>
+                Berlaku sampai: sejak tanggal 17 Agustus 2023 sampai dengan 17
+                Agustus 2028
+              </li>
+            </ul>
+          </div>
+
+                    <!-- Dosen -->
+          <div class="tab-pane fade" id="dosen" role="tabpanel">
+            <h3 class="profil-section-heading">Dosen</h3>
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/burenny.png"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">
+                      Renny Puspita Sari, S.T., M.T.
+                    </p>
+                    <p class="mb-0 small text-muted">
+                      Ketua Jurusan Sistem Informasi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/pakibnur.png"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">Ibnur Rusi, S.Kom., M.M.</p>
+                    <p class="mb-0 small text-muted">
+                      Sekretaris Jurusan Sistem Informasi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/bunurul.jpeg"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">Nurul Mutiah, S.T., M.T.</p>
+                    <p class="mb-0 small text-muted">
+                      Ketua Kelompok Keahlian Manajemen Sistem Informasi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/pakdian.jpeg"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">Dian Prawira, S.T., M.Eng.</p>
+                    <p class="mb-0 small text-muted">
+                      Ketua Kelompok Keahlian Pengembangan Perangkat Lunak
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/pakilham.jpg"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">Ilhamsyah, S.Si., M.Cs.</p>
+                    <p class="mb-0 small text-muted">
+                      Ketua Kelompok Keahlian Intelejensi Bisnis
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/paksyahru.jpeg"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">
+                      Syahru Rahmayuda, S.Kom., M.Kom.
+                    </p>
+                    <p class="mb-0 small text-muted">
+                      Anggota Kelompok Keahlian Intelejensi Bisnis
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/pakferdy.jpg"
+                    class="dosen-foto"
+                    alt="Dosen"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">
+                      Ferdy Febriyanto, S.Kom., M.Kom.
+                    </p>
+                    <p class="mb-0 small text-muted">
+                      Anggota Kelompok Keahlian Pengembangan Perangkat Lunak
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STAFF / TENDIK DI DALAM TAB DOSEN -->
+            <h3 class="profil-section-heading mt-4">Staff / Tenaga Kependidikan</h3>
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/pakagus.png"
+                    class="dosen-foto"
+                    alt="Staff"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">Agus Setiawan, S.Si</p>
+                    <p class="mb-0 small text-muted">
+                      Admin Jurusan Sistem Informasi
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="d-flex align-items-center gap-3 p-2 rounded-3 bg-soft">
+                  <img
+                    src="assets/img/paksolih.png"
+                    class="dosen-foto"
+                    alt="Staff"
+                  />
+                  <div>
+                    <p class="mb-0 fw-semibold">Solihin, S.Kom.</p>
+                    <p class="mb-0 small text-muted">
+                      Laboran Jurusan Sistem Informasi
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+      >
+        <span
+          >&copy; <span id="year"></span> Copyright © 2025 Program Studi Sistem
+          Informasi | Powered by Program Studi Sistem Informasi
+        </span>
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap (lokal) -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS custom -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

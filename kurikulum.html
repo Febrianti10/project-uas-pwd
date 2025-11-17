@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Studi Sistem Informasi - Kurikulum</title>
+
+    <!-- Bootstrap (lokal) -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Style custom -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap Icons (opsional, via CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="assets/img/Lambang_Universitas_Tanjungpura.png"
+            alt="Logo Prodi SI"
+            class="navbar-logo"
+          />
+          <div class="ms-2 navbar-brand-text">
+            <div class="brand-line-1">Prodi Sistem Informasi</div>
+            <div class="brand-line-2">FMIPA UNTAN</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kurikulum.html">Kurikulum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kemahasiswaan.html">Kemahasiswaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SPACER -->
+    <div style="height: 80px"></div>
+
+    <!-- HEADER KURIKULUM -->
+    <section class="bg-soft py-4">
+      <div class="container">
+        <p class="section-title mb-1">Kurikulum</p>
+        <h2 class="section-heading mb-2">
+          Kurikulum Program Studi Sistem Informasi
+        </h2>
+        <div class="section-divider mb-3"></div>
+        <p class="mb-0">
+          Berdasarkan Keputusan Menteri Nomor: 442/6.E2/DT/2014 tanggal 19 Mei
+          2014, Program Studi Sistem Informasi sejak pendiriannya menerapkan
+          Kurikulum Berbasis Kompetensi (KBK) Seiring berjalannya waktu berubah
+          menjadi Kurikulum Pendidikan Tinggi (KPI) yang sesuai dengan Kerangka
+          Kualifikasi Nasional indonesia (KKN). Kurikulum Program Studi Sistem
+          Informasi saat ini disesuaikan dengan Peraturan Menteri Pendidikan dan
+          Kebudayaan Republik Indonesia Nomor 3 Tahun 2020 tentang Standar
+          Nasional Pendidikan Tinggi yang memuat kebijakan mengenai Merdeka
+          Belajar Kampus Merdeka (MBKM), dengan kurikulum yang mereferensi dari
+          standar IS Computing Curricula yang dikeluarkan oleh ACM tahun 2020
+          serta kerangka kerja KKNI APTIKOM tahun 2019. Muatan kurikulum Program
+          Studi Sistem Informasi sekarang terdiri dari kurikulum teori 149 SKS
+          (97%) dan kurikulum praktek 5 SKS (3%). Adapun untuk menyelesaikan
+          program sarjana di Program Studi Sister Informasi wajib menyelesaikan
+          minimal 144 SKS. Pada mata kuliah yang memiliki praktikum, terdapat
+          perbedaan durasi perkuliahan yang disesuaikan dengan aturan yang
+          berlaku. SKS teori dan praktikum dipisah menjadi 2 SKS teori (100
+          menit) dan 1 SKS praktikum (170 menit). Praktikum selain didapatkan
+          pada mata kuliah wajib juga bisa didapatkan pada program Merdeka
+          Belajar Kampus Merdeka (MBKM) dari Kementerian Pendidikan dan
+          Kebudayaan.
+        </p>
+      </div>
+    </section>
+
+    <!-- KONTEN KURIKULUM -->
+    <section id="kurikulum-content">
+      <div class="container py-4">
+        <div class="accordion" id="kurikulumAccordion">
+          <!-- SEMESTER 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem1Heading">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem1"
+              >
+                Semester 1
+              </button>
+            </h2>
+            <div
+              id="sem1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI101</td>
+                        <td>Pengantar Sistem Informasi</td>
+                      </tr>
+                      <tr>
+                        <td>SI102</td>
+                        <td>Logika &amp; Algoritma</td>
+                      </tr>
+                      <tr>
+                        <td>SI103</td>
+                        <td>Matematika Diskrit</td>
+                      </tr>
+                      <tr>
+                        <td>UM101</td>
+                        <td>Bahasa Indonesia</td>
+                      </tr>
+                      <tr>
+                        <td>UM102</td>
+                        <td>Pendidikan Pancasila</td>
+                      </tr>
+                      <tr>
+                        <td>UM103</td>
+                        <td>Pengantar Teknologi Informasi</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem2Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem2"
+              >
+                Semester 2
+              </button>
+            </h2>
+            <div
+              id="sem2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI201</td>
+                        <td>Pemrograman Dasar</td>
+                      </tr>
+                      <tr>
+                        <td>SI202</td>
+                        <td>Organisasi &amp; Arsitektur Komputer</td>
+                      </tr>
+                      <tr>
+                        <td>SI203</td>
+                        <td>Statistika &amp; Probabilitas</td>
+                      </tr>
+                      <tr>
+                        <td>UM201</td>
+                        <td>Bahasa Inggris</td>
+                      </tr>
+                      <tr>
+                        <td>UM202</td>
+                        <td>Pendidikan Agama</td>
+                      </tr>
+                      <tr>
+                        <td>UM203</td>
+                        <td>Wirausaha &amp; Inovasi Digital</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem3Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem3"
+              >
+                Semester 3
+              </button>
+            </h2>
+            <div
+              id="sem3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI301</td>
+                        <td>Analisis &amp; Perancangan Sistem Informasi</td>
+                      </tr>
+                      <tr>
+                        <td>SI302</td>
+                        <td>Pemrograman Berorientasi Objek</td>
+                      </tr>
+                      <tr>
+                        <td>SI303</td>
+                        <td>Basis Data</td>
+                      </tr>
+                      <tr>
+                        <td>SI304</td>
+                        <td>Interaksi Manusia &amp; Komputer</td>
+                      </tr>
+                      <tr>
+                        <td>UM301</td>
+                        <td>Komunikasi Bisnis</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem4Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem4"
+              >
+                Semester 4
+              </button>
+            </h2>
+            <div
+              id="sem4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI401</td>
+                        <td>Rekayasa Perangkat Lunak</td>
+                      </tr>
+                      <tr>
+                        <td>SI402</td>
+                        <td>Sistem Basis Data Lanjut</td>
+                      </tr>
+                      <tr>
+                        <td>SI403</td>
+                        <td>Jaringan Komputer</td>
+                      </tr>
+                      <tr>
+                        <td>SI404</td>
+                        <td>Sistem Informasi Manajemen</td>
+                      </tr>
+                      <tr>
+                        <td>UM401</td>
+                        <td>Metodologi Penelitian</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem5Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem5"
+              >
+                Semester 5
+              </button>
+            </h2>
+            <div
+              id="sem5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI501</td>
+                        <td>Manajemen Proyek TI</td>
+                      </tr>
+                      <tr>
+                        <td>SI502</td>
+                        <td>Data Mining</td>
+                      </tr>
+                      <tr>
+                        <td>SI503</td>
+                        <td>Keamanan Informasi</td>
+                      </tr>
+                      <tr>
+                        <td>SI5xx</td>
+                        <td>Mata Kuliah Peminatan 1</td>
+                      </tr>
+                      <tr>
+                        <td>SI5xx</td>
+                        <td>Mata Kuliah Peminatan 2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem6Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem6"
+              >
+                Semester 6
+              </button>
+            </h2>
+            <div
+              id="sem6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI601</td>
+                        <td>Enterprise Resource Planning</td>
+                      </tr>
+                      <tr>
+                        <td>SI602</td>
+                        <td>Business Intelligence</td>
+                      </tr>
+                      <tr>
+                        <td>SI6xx</td>
+                        <td>Mata Kuliah Peminatan 3</td>
+                      </tr>
+                      <tr>
+                        <td>SI6xx</td>
+                        <td>Mata Kuliah Peminatan 4</td>
+                      </tr>
+                      <tr>
+                        <td>UM601</td>
+                        <td>Kewirausahaan TI</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem7Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem7"
+              >
+                Semester 7
+              </button>
+            </h2>
+            <div
+              id="sem7"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI701</td>
+                        <td>Kerja Praktek / Magang</td>
+                      </tr>
+                      <tr>
+                        <td>SI702</td>
+                        <td>Sistem Informasi Strategis</td>
+                      </tr>
+                      <tr>
+                        <td>SI7xx</td>
+                        <td>Mata Kuliah Pilihan 1</td>
+                      </tr>
+                      <tr>
+                        <td>SI7xx</td>
+                        <td>Mata Kuliah Pilihan 2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEMESTER 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="sem8Heading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sem8"
+              >
+                Semester 8
+              </button>
+            </h2>
+            <div
+              id="sem8"
+              class="accordion-collapse collapse"
+              data-bs-parent="#kurikulumAccordion"
+            >
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table
+                    class="table table-bordered align-middle table-kurikulum mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">Kode</th>
+                        <th>Mata Kuliah</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>SI801</td>
+                        <td>Tugas Akhir / Skripsi</td>
+                      </tr>
+                      <tr>
+                        <td>SI8xx</td>
+                        <td>Mata Kuliah Pilihan 3</td>
+                      </tr>
+                      <tr>
+                        <td>SI8xx</td>
+                        <td>Mata Kuliah Pilihan 4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end accordion -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+      >
+        <span
+          >&copy; <span id="year"></span> Copyright © 2025 Program Studi Sistem
+          Informasi | Powered by Program Studi Sistem Informasi
+        </span>
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap (lokal) -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS custom -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
