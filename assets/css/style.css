@@ -160,9 +160,9 @@ section {
   color: #ffffff;
 }
 
-/* --------------------------------------------------
-   PROFIL TABS STYLE (garis bawah seperti contoh)
--------------------------------------------------- */
+/* -------------------
+   PROFIL TABS STYLE 
+--------------------- */
 .profil-tabs-line {
   border-bottom: 1px solid #e5e7eb;
   margin-bottom: 1.5rem;
@@ -301,9 +301,9 @@ section {
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.4);
 }
 
-/* --------------------------------------------------
-   FASILITAS (card rapi gambar atas, teks bawah)
--------------------------------------------------- */
+/* --------------
+   FASILITAS 
+--------------- */
 .facility-card {
   border-radius: 1.5rem;
   overflow: hidden;
